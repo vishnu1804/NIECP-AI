@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-ink-950 text-slate-200 antialiased;
+  font-feature-settings: "cv02", "cv03", "cv04";
+}
+
+html.light body {
+  @apply bg-slate-100 text-slate-800;
+}
+
+html.light .bg-ink-950,
+html.light .bg-ink-900,
+html.light .bg-ink-850 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .text-slate-200 { color: #334155 !important; }
+html.light .text-slate-100 { color: #0f172a !important; }
+html.light .text-slate-300 { color: #334155 !important; }
+html.light .text-slate-400 { color: #64748b !important; }
+html.light .text-slate-500 { color: #64748b !important; }
+html.light .border-white\/8 { border-color: rgb(0 0 0 / 0.08) !important; }
+html.light .border-white\/10 { border-color: rgb(0 0 0 / 0.1) !important; }
+html.light .border-white\/12 { border-color: rgb(0 0 0 / 0.12) !important; }
+html.light .bg-white\/8 { background-color: rgb(0 0 0 / 0.05) !important; }
+html.light .bg-white\/6 { background-color: rgb(0 0 0 / 0.04) !important; }
+html.light .bg-white\/5 { background-color: rgb(0 0 0 / 0.04) !important; }
+html.light .bg-white\/4 { background-color: rgb(0 0 0 / 0.03) !important; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(100, 116, 139, 0.35); border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.prose-inline strong { @apply font-semibold text-slate-100; }
